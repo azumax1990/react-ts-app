@@ -5,7 +5,7 @@ interface AppProps {
   message: string;
 };
 
-const App = ({message}: AppProps) => {
+const App: React.FunctionComponent<AppProps> = ({ message }) => {
   return (
     <div style={{padding: "100px 200px", textAlign: "center"}}>
       <div>{message}</div>
