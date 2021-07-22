@@ -1,5 +1,7 @@
 import React from 'react';
-import './App.css';
+import { Counter } from "./Counter";
+import { CounterReducer } from './CounterReducer';
+
 
 interface AppProps {
   message: string;
@@ -8,7 +10,9 @@ interface AppProps {
 const App: React.FunctionComponent<AppProps> = ({ message }) => {
   return (
     <div style={{padding: "100px 200px", textAlign: "center"}}>
-      <div>{message}</div>
+      <div>
+        <CounterReducer />
+      </div>
     </div>
      
   );
